@@ -2,14 +2,14 @@
 <div id="home">
     <section id="intro" class="scale-in-center container-lg">
         <img src="src/images/logo.png" alt="">
-        <h2 class="text-focus-in tracking-in-expand"><span>Welcome to JamesWebStudio</span></h2>
+        <h3 class="text-focus-in tracking-in-expand mt-4"><span>Welcome to JamesWebStudio</span></h3>
         <p>I'm Nigel James a full stack web developer at JamesWebStudio</p>
         <p>Availiable for front end, back end or full stack projects</p>
         <hr />
         <p>to contact us click below</p>
         <nuxt-link to="/contact"><button class="btn heartbeat custom-btn">Contact Us</button></nuxt-link>
     </section>
-    <section>
+    <section id="services" class="container">
         <h2>Our Services</h2>
         <div class="card">
             <div class="card-title">
@@ -49,7 +49,7 @@
                 <h3></h3>
             </div>
             <div class="card-body">
-                <p>Using the Latest technologies we create modern and functional websites and applications</p>
+                <p>Using the latest technologies we create modern and functional websites and applications</p>
                 <p>All our work is fully responsize to work equally well on all screen sizes</p>
                 <p></p>
             </div>
@@ -77,10 +77,17 @@ img {
     width:100%;
 }
 
+#services {
+    padding-top:40px;
+    
+    
+}
+
 h2 {
     margin-bottom:30px;
     text-align: center;
     letter-spacing:2px;
+    font-size: clamp(1.2rem, 2.4rem, 3rem);
 }
 
 h3 {
@@ -99,6 +106,10 @@ h3 {
     background-position:center;
     font-family: Roboto, Tangerine Georgia, 'Times New Roman', Times, serif;
     margin-bottom:50px;
+    /* position: fixed;
+    top: 80px;
+    left:0;
+    max-width:320px; */
 }
 
 #intro p, #intro h2 { 
@@ -152,9 +163,13 @@ span {
 @media screen and (min-width:800px) {
     #home {
         display: grid;
-        grid-template-columns: 300px 1fr;
+        grid-template-columns: 350px 1fr;
         column-gap: 20px;
         /* padding: 0 10%; */
+    }
+
+    #services {
+        /* margin-left: 300px; */
     }
 }
 

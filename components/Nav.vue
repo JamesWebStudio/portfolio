@@ -41,6 +41,8 @@
     @media screen and (min-width:1100px) {
         .container-fluid {
             padding: 0 10em;
+            display: flex;
+            align-items: baseline;
         }
     }
 </style>

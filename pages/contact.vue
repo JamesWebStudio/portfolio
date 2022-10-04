@@ -1,6 +1,6 @@
 <template>
 <section class="container">
-    <h1 style="margin-bottom:30px;">Contact Me</h1>
+    <h1 style="margin-bottom:30px;">Contact Us</h1>
     <form class="mx-auto" method="POST" action="https://formsubmit.co/nigeljames14@outlook.com">
         <input type="hidden" name="_autoresponse" value="Thank you, your message as been received and we will get back to you as soon as possible" />
         <input type="hidden" name="_captcha" value="false" />
@@ -42,6 +42,7 @@
     input, textarea {
         margin-bottom:25px;
     }
+    
     button {
         width:100%;
     }

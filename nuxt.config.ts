@@ -23,7 +23,17 @@ export default defineNuxtConfig({
             {
                 rel: 'stylesheet',
                 href: 'assets/animations.css'
-            }
+            },
+            {
+                rel: "icon",
+                type: "image/x-icon", 
+                href: "/assets/favicon/favicon-16x16.png"
+            },
+            {
+              rel: "icon",
+              type: "image/x-icon", 
+              href: "/assets/favicon/favicon-32x32.png"
+          }
           ],
           noscript: [
             // <noscript>Javascript is required</noscript>

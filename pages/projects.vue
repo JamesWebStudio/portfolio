@@ -24,7 +24,7 @@
                 <div class="card-title">
                     <h4>Pocket Office</h4>
                 </div>
-                <div class="card-sub-title">Simple mobile appointments, meetings and diary app</div>
+                <div class="card-sub-title">Simple mobile appointments, meetings, lists, notes and diary app</div>
                 <div class="card-body">
                     <img src="@/assets/pocketoffice.webp" alt="No Image">
                 </div>
@@ -54,15 +54,15 @@
                 <div class="card-title">
                     <h4>TBD</h4>
                 </div>
-                <div class="card-sub-title">TBW</div>
+                <div class="card-sub-title">GP practice web site</div>
                 <div class="card-body">
-                    <img src="@/assets/spaceodyssey.jpg" alt="No Image" loading="lazy">
+                    <img src="@/assets/gp-practice.webp" alt="No Image" loading="lazy">
                 </div>
                 <div class="card-tech">
-                    <p>Vue 2.6 & Firebase</p>
+                    <p>Nuxt</p>
                 </div>
                 <div class="card-link">
-                    <a href="http://www.space-odyssey.surge.sh" target="_blank">Link</a>
+                    <a href="http://www.gp-practice.surge.sh" target="_blank">Link</a>
                 </div>
             </section>
             <section class="card">
@@ -71,13 +71,13 @@
                 </div>
                 <div class="card-sub-title">TBW</div>
                 <div class="card-body">
-                    <img src="@/assets/spaceodyssey.jpg" alt="No Image" loading="lazy">
+                    <img src="" alt="No Image" loading="lazy">
                 </div>
                 <div class="card-tech">
                     <p>Vue 2.6 & Firebase</p>
                 </div>
                 <div class="card-link">
-                    <a href="http://www.space-odyssey.surge.sh" target="_blank">Link</a>
+                    <a href="" target="_blank">Link</a>
                 </div>
             </section>
             <section class="card">
@@ -86,13 +86,13 @@
                 </div>
                 <div class="card-sub-title">TBW</div>
                 <div class="card-body">
-                    <img src="@/assets/spaceodyssey.jpg" alt="No Image" loading="lazy">
+                    <img src="" alt="No Image" loading="lazy">
                 </div>
                 <div class="card-tech">
                     <p>Vue 2.6 & Firebase</p>
                 </div>
                 <div class="card-link">
-                    <a href="http://www.space-odyssey.surge.sh" target="_blank">Link</a>
+                    <a href="" target="_blank">Link</a>
                 </div>
             </section>
         </section>
@@ -118,6 +118,7 @@
     #cards-container {
         display:flex;
         flex-wrap: wrap;
+
     }
 
     h1, h4 {
@@ -125,6 +126,7 @@
     }
     .card {
         margin-top:25px;
+        
     }
     
 
@@ -148,6 +150,12 @@
     @media (min-width:800px) {
         #cards-container {
             margin: 30px 15px;
+            justify-content: space-evenly;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 500px;
         }
     }
 </style>
