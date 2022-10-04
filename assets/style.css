@@ -7,6 +7,7 @@
   --navbar-bg-contrast: hsl(0, 0%, 25%);
   --radial-gradient: radial-gradient(#012035, rgb(82, 82, 133), rgb(57, 57, 68));
   --body-lr-padding: 5vw;
+  --btn-primary-color: orangered;
 }
   
   body, html {
@@ -171,7 +172,7 @@
   }
 
   .card-title {
-    background-color: orangered;
+    background-color: var(--btn-primary-color);
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(217,176,107,1) 0%, rgba(170,114,37,1) 100%);
     min-height: 40px;
     display:flex;
@@ -228,8 +229,8 @@
       }
   
       #navbar-toggle, #navbar-toggle[aria-expanded="true"] {
-      display: none;
-    }
+        display: none;
+      }
   
     #navbar-menu, #navbar-toggle[aria-expanded="true"] #navbar-menu {
       visibility: visible;

@@ -168,9 +168,7 @@ span {
         /* padding: 0 10%; */
     }
 
-    #services {
-        /* margin-left: 300px; */
-    }
+    
 }
 
 
