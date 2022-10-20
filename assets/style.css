@@ -8,6 +8,7 @@
   --radial-gradient: radial-gradient(#012035, rgb(82, 82, 133), rgb(57, 57, 68));
   --body-lr-padding: 5vw;
   --btn-primary-color: orangered;
+  --title-background-gradient: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(217,176,107,1) 0%, rgba(170,114,37,1) 100%);
 }
   
   body, html {
@@ -18,7 +19,7 @@
       font-family: Arial, Helvetica, sans-serif;
       font-family: 'Roboto', Montserrat, sans-serif;
       background-color: rgb(62, 62, 77);
-      background: url('@/images/background-texture.jpg');
+      background: url('background-texture.jpg');
       background-repeat: no-repeat;
       background-size: cover;
       color: white;
@@ -30,12 +31,12 @@
   }
 
   .custom-btn {
-    border-radius: 20px;
+    /* border-radius: 20px;
     width:80%;
     background: var(--radial-gradient);
     color: white;
     font-size: 1.5em;
-    max-width:200px;
+    max-width:200px; */
   }
   
   #info {
@@ -172,28 +173,26 @@
   }
 
   .card-title {
-    background-color: var(--btn-primary-color);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(217,176,107,1) 0%, rgba(170,114,37,1) 100%);
+    background-color: orangered;
+    background: var(--title-background-gradient);
     min-height: 40px;
     display:flex;
     justify-content:center;
     align-items:center;
-    margin:0;
+    margin-bottom:20px;
     padding: 0;
   }
 
   .card-body {
     margin:0;
     padding:0;
-    background-color: transparent;
     width: 100%;
     max-width: 100vw;
-    //height: 300px;
     height: max-content;
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    
   }
 
   .card-body img {

@@ -1,5 +1,8 @@
 <template>
-    <div id="mainLayout" class="container.lg">
+    <div id="mainLayout">
+        <Html lang="en-GB">
+            <title>JamesWebStudio</title>
+        </Html>
         <Nav />
         <slot />
         <Footer />

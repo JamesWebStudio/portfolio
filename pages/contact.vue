@@ -22,7 +22,9 @@
 
 <script setup>
     onMounted(() => {
-        document.getElementById("nameInput").focus()
+        setTimeout(() => {
+            document.getElementById("nameInput").focus()
+        }, 500) 
     })
 </script>
 
@@ -40,7 +42,13 @@
     }
 
     input, textarea {
+        background: rgba(255, 255, 255, 0.2);
         margin-bottom:25px;
+        border: none;
+        border-bottom: 1px solid white;
+        font-weight:600px;
+        color: var(--title-background-gradient);
+
     }
     
     button {

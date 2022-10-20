@@ -1,0 +1,116 @@
+<template>
+    <div class="container">
+        <section id="about-icons">
+            <img src="~/assets/images/vue3.jpg" alt="Vue 3" id="about-icon-1" class="slide-in-left">
+            <img src="~/assets/images/nuxt.png" alt="Nuxt" id="about-icon-2" class="slide-in-top">
+            <img src="~/assets/images/quasar.png" alt="Quasar" id="about-icon-3" class="slide-in-right">
+        </section> 
+        <section id="about-text">
+            <h5>JamesWebStudio is a web development company founded & run by myself, <span>Nigel James Wheeldon</span></h5>
+            <h5>a full stack web developer from Birmingham England</h5>
+            <p class="mt-5">I have been involved in the IT industry for 12 years and in web development for the last 5</p>
+            <p>Specialising in Ecommerce, Business and Educational websites I use modern web development techniques combined with state of the art tooling, frameworks and libraries
+                to achieve high performing, functional and intuitive web sites and applications
+            </p>
+            <p>Functionality, performance and simplicity are key to a great user experience, conversions and repeat visits</p>
+            <p>I am a big Vue.js fan and supporter and I have included some Youtube videos on the front end frameworks I prefer to use so you can see if they are a good fit for your needs</p>
+        </section>
+        <section id="about-videos">
+            <div>
+                <h5>An introduction to Vue 3</h5>
+                <h6>my favourite Javascript Framework</h6>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/A5cVyjrKx_Q" title="Vue 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div>
+                <h5>Nuxt 3</h5>
+                <h6>the next big thing in web developmentt</h6>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/noq-ZHTD2Cg" title="Nuxt 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div>
+                <h5>Quasar</h5>
+                <h6>the complete Vue 3 framework</h6>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VMskuNmQBqE" title="Quasar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+    </div>
+</template>
+
+<style scoped>
+    @import url(~/assets/animations.css);
+    .container {
+        padding-top:30px;
+        padding:0;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap:wrap;
+    }
+
+    #about-icons {
+        padding:20px 5px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    #about-icons img {
+        width: 100%;
+        max-width: 350px;
+        aspect-ratio: 16 / 9;
+    }
+
+    #about-text {
+        padding: 50px 10px;
+        text-align:center;
+    }
+
+    #about-videos {
+        width: 100vw;
+        max-width:100vw;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        padding: 30px 0;
+        row-gap: 50px;
+    }
+
+    iframe {
+        width: 100vw;
+        max-width: 400px;
+        padding:0;
+        height: 100%;
+    }
+
+    h5, h6, p {
+        font-family: 'Roboto', Montserrat, sans-serif;
+        letter-spacing: 2px;
+        line-height: 35px;
+        margin: 0 auto;
+    }
+
+    p {
+        margin-bottom: 15px;
+    }
+
+    span {
+        font-style: italic;
+    }
+
+    @media screen and (min-width:768px) {
+        #about-icons {
+            gap: 20px;
+        }
+
+        #about-videos {
+            gap :20px;
+        
+        }
+
+        
+
+
+    }
+</style>

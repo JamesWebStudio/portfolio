@@ -6,10 +6,12 @@
 
 <style scoped>
 #footer {
-    position: absolute;
+    /* position: absolute;
     bottom:0;
-    left:0;
+    left:0; */
     width: 100%;
     background-color: black;
+    height:80px;
+    margin-top:50px;
 }
 </style>
