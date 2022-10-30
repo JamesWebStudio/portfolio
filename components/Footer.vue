@@ -1,17 +1,20 @@
 <template>
     <div id="footer">
-        <h4>Footer</h4>
+        <h6>Copyright@jameswebstudio</h6>
+        <h6>email: jameswebstudio.outlook.com</h6>
     </div>
 </template>
 
 <style scoped>
 #footer {
-    /* position: absolute;
-    bottom:0;
-    left:0; */
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
     background-color: black;
-    height:80px;
-    margin-top:50px;
+    height:120px;
+    padding-top:30px;
+    
 }
 </style>

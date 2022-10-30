@@ -1,11 +1,11 @@
 <template>
     <div class="container">
         <section id="about-icons">
-            <img src="~/assets/images/vue3.jpg" alt="Vue 3" id="about-icon-1" class="slide-in-left">
-            <img src="~/assets/images/nuxt.png" alt="Nuxt" id="about-icon-2" class="slide-in-top">
-            <img src="~/assets/images/quasar.png" alt="Quasar" id="about-icon-3" class="slide-in-right">
+            <img src="~/assets/images/vue3.jpg" alt="Vue 3" id="about-icon-1" class="slide-in-left img-fluid">
+            <img src="~/assets/images/nuxt.png" alt="Nuxt" id="about-icon-2" class="slide-in-top  img-fluid">
+            <img src="~/assets/images/quasar.png" alt="Quasar" id="about-icon-3" class="slide-in-right  img-fluid">
         </section> 
-        <section id="about-text">
+        <section id="about-text" class="text-focus-in">
             <h5>JamesWebStudio is a web development company founded & run by myself, <span>Nigel James Wheeldon</span></h5>
             <h5>a full stack web developer from Birmingham England</h5>
             <p class="mt-5">I have been involved in the IT industry for 12 years and in web development for the last 5</p>
@@ -14,6 +14,7 @@
             </p>
             <p>Functionality, performance and simplicity are key to a great user experience, conversions and repeat visits</p>
             <p>I am a big Vue.js fan and supporter and I have included some Youtube videos on the front end frameworks I prefer to use so you can see if they are a good fit for your needs</p>
+            <nuxt-link to="/contact#contact-title" class="link">Contact us for more information</nuxt-link>
         </section>
         <section id="about-videos">
             <div>
@@ -44,6 +45,7 @@
         justify-content: center;
         align-items: center;
         flex-wrap:wrap;
+        overflow: hidden;
     }
 
     #about-icons {
@@ -62,8 +64,9 @@
     }
 
     #about-text {
-        padding: 50px 10px;
+        padding: 50px 5px;
         text-align:center;
+        font-size: 1.2rem;
     }
 
     #about-videos {
@@ -99,6 +102,10 @@
         font-style: italic;
     }
 
+    .link {
+        color: orange;
+    }
+
     @media screen and (min-width:768px) {
         #about-icons {
             gap: 20px;
@@ -107,6 +114,19 @@
         #about-videos {
             gap :20px;
         
+        }
+
+        #about-text {
+            padding: 60px 10vw;
+        }
+
+        #about-text h5 {
+            font-size: 1.6rem;
+            line-height: 45px;
+        }
+
+        #about-text p {
+            font-size: 1.3rem;
         }
 
         

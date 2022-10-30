@@ -1,7 +1,7 @@
 <template>
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
     <div class="container-fluid">
-        <img src="~/public/images/logo12.webp" alt="">
+        <img src="/images/logo.webp" alt="" style="aspect-ratio: 1 / 1" />
         <a class="navbar-brand" href="/">JamesWebStudio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -67,12 +67,12 @@ nav {
     text-align: center;
 }
 
-.navLink:hover, .nav-link:active {
-    background: transparent !important;
+.nav-link:hover {
+    opacity: 0.2;
 }
 
-.nuxt-link-exact-active {
-    background: transparent;
+.router-link-active {
+    opacity: 0.6;
 }
 
 @media screen and (min-width:1100px) {

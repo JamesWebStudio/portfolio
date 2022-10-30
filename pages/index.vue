@@ -1,7 +1,7 @@
 <template>
 <div id="home">
     <section id="intro" class="scale-in-center"> 
-        <img src="~/public/images/logo12.webp" alt="JamesWebStudio">
+        <img src="/images/logo.webp" alt="JamesWebStudio" class="img-fluid" style="aspect-ratio: 4 / 3" />
         <div>
             <h3 class="text-focus-in mt-4"><span>Welcome to JamesWebStudio</span></h3>
             <p>I'm Nigel James a full stack web developer at JamesWebStudio</p>
@@ -66,7 +66,7 @@
                 <p>Already have a website?</p>
                 <p>Performance not as good as hoped or expected</p>
                 <p>We can review your site and make any improvements to increase speed, performance and user experience</p>
-                <p>This can will to increased sales and leads and also help with SEO rankings making your site more visible to search engines</p>
+                <p>This will lead to increased sales and also help with SEO rankings making your site more visible to search engines</p>
             </div>
         </div>
     </section>
@@ -88,6 +88,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 .row {
@@ -186,7 +187,7 @@ span {
 @media screen and (min-width:1000px) {
     #home {
         display: grid;
-        grid-template-columns: 35vw 1fr;
+        grid-template-columns: 30vw 1fr;
         grid-template-areas: "intro services";
         column-gap: 20px;
         margin:0;
@@ -219,7 +220,8 @@ span {
     }
 
     #intro img {
-        width: 100%;
+        width: 90%;
+
     }
 
     .card {

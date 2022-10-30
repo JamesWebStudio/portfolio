@@ -1,7 +1,10 @@
 <template>
     <div id="mainLayout">
         <Html lang="en-GB">
-            <title>JamesWebStudio</title>
+            <Head>
+                <Title>JamesWebStudio</Title>
+            </Head>
+            <Meta name="description" content="JamesWebStudio - Functionality and Simplicity by Design" />
         </Html>
         <Nav />
         <slot />
