@@ -32,7 +32,6 @@
 
 <style scoped> 
 nav {
-    margin-bottom: 2vw;
     width: 100vw;
     overflow-x: hidden;
 }
@@ -75,20 +74,26 @@ nav {
     opacity: 0.6;
 }
 
+@media screen and (min-width: 600px) {
+    nav { 
+        margin-bottom: 20px;
+    }
+}
+
 @media screen and (min-width:1100px) {
     .container-fluid {
         padding: 0 10em;
         display: flex;
-        /* align-items: baseline; */
-    }
-    .nav {
-        /* margin-bottom: 60px; */
     }
 
     .container-fluid img {
         width: 90px;
         height:68px;
     }
-    
+
+    nav {
+        margin-bottom: 50px;
+    }
+
 }
 </style>

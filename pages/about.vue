@@ -5,19 +5,19 @@
             <img src="~/assets/images/nuxt.png" alt="Nuxt" id="about-icon-2" class="slide-in-top  img-fluid">
             <img src="~/assets/images/quasar.png" alt="Quasar" id="about-icon-3" class="slide-in-right  img-fluid">
         </section> 
-        <section id="about-text" class="text-focus-in">
+        <section id="about-text" class="slide-in-blurred-bottom">
             <h5>JamesWebStudio is a web development company founded & run by myself, <span>Nigel James Wheeldon</span></h5>
             <h5>a full stack web developer from Birmingham England</h5>
-            <p class="mt-5">I have been involved in the IT industry for 12 years and in web development for the last 5</p>
+            <p class="mt-5">I have been involved in various positions in the IT industry and have over 5 years in web development experience</p>
             <p>Specialising in Ecommerce, Business and Educational websites I use modern web development techniques combined with state of the art tooling, frameworks and libraries
                 to achieve high performing, functional and intuitive web sites and applications
             </p>
             <p>Functionality, performance and simplicity are key to a great user experience, conversions and repeat visits</p>
             <p>I am a big Vue.js fan and supporter and I have included some Youtube videos on the front end frameworks I prefer to use so you can see if they are a good fit for your needs</p>
-            <nuxt-link to="/contact#contact-title" class="link">Contact us for more information</nuxt-link>
+            <nuxt-link to="/contact" class="link">Contact us for more information</nuxt-link>
         </section>
         <section id="about-videos">
-            <div>
+            <div class="slide-in-left">
                 <h5>An introduction to Vue 3</h5>
                 <h6>my favourite Javascript Framework</h6>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/A5cVyjrKx_Q" title="Vue 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -27,7 +27,7 @@
                 <h6>the next big thing in web developmentt</h6>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/noq-ZHTD2Cg" title="Nuxt 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div>
+            <div class="slide-in-right">
                 <h5>Quasar</h5>
                 <h6>the complete Vue 3 framework</h6>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/VMskuNmQBqE" title="Quasar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -78,6 +78,7 @@
         justify-content: center;
         padding: 30px 0;
         row-gap: 50px;
+        margin-bottom:30px;
     }
 
     iframe {
@@ -113,7 +114,7 @@
 
         #about-videos {
             gap :20px;
-        
+            margin-bottom: 60px;
         }
 
         #about-text {

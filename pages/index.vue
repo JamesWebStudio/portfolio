@@ -99,7 +99,7 @@
 img {
     width:100%;
     max-width:540px;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 
 #services {
@@ -125,7 +125,6 @@ h3 {
     text-align: center;
     padding:0;
     font-family: Roboto, Tangerine Georgia, 'Times New Roman', Times, serif;
-    /* margin:auto; */
     margin-bottom:50px;
    
 }
@@ -187,10 +186,10 @@ span {
 @media screen and (min-width:1000px) {
     #home {
         display: grid;
-        grid-template-columns: 30vw 1fr;
+        grid-template-columns: 25vw 1fr;
         grid-template-areas: "intro services";
         column-gap: 20px;
-        margin:0;
+        /* margin-top: 60px; */
         width: 100vw;
         max-width: 100vw;
         padding: 0 3em;

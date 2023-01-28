@@ -3,20 +3,28 @@
     <h1 style="margin-bottom:30px;" id="contact-title">Contact Us</h1>
     <form class="mx-auto" method="POST" action="https://formsubmit.co/nigeljames14@outlook.com">
         <input type="hidden" name="_autoresponse" value="Thank you, your message as been received and we will get back to you as soon as possible" />
-        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_captcha" value="true" />
         <input type="hidden" name="_template" value="table" />
         <input type="hidden" name="_next" value="http://localhost:3000/" />
-        <input type="hidden" name="_subject" value="JAMESWEBSTUDIO - new Query from website" />
-        <label for="name">Your Name or Business</label>
+        <input type="hidden" name="_subject" value="JAMESWEBSTUDIO - query from website" />
+        <label for="name">Your Name or Business *</label>
         <input type="text" name="name" class="form-control" required id="nameInput">
-        <label for="email">Contact Email</label>
+        <label for="email">Contact Email *</label>
         <input type="email" name="email" class="form-control" required>
         <label for="phone">Contact Phone</label>
         <input type="text" name="phone" class="form-control">
-        <label for="message">Your Message</label>
+        <label for="message">Your Message *</label>
         <textarea type="text" name="message" class="form-control" cols="30" rows="10" required></textarea>
-        <button class="btn custom-btn" type="submit" >Send Message</button>
+        <p>* required</p>
+        <button class="btn custom-btn" type="submit" @submit="submit">Send Message</button>
     </form>
+    <!-- <div v-if="messageSent">
+        <div class="alert">Message Sent, we will reply  as soon as possible</div>
+        <div id="links">
+            <nuxt-link to="/">Home</nuxt-link>
+            <nuxt-link to="-1">Back</nuxt-link>
+        </div>
+    </div> -->
 </section>
 </template>
 
@@ -26,6 +34,13 @@
             document.getElementById("nameInput").focus()
         }, 500) 
     })
+
+    let messageSent = ref(false)
+
+    function submit() {
+        messageSent.value = true
+    }
+    
 </script>
 
 <style scoped>
@@ -35,6 +50,7 @@
         color: white;
         padding:0 10px;
         height: 100vh;
+        z-index: 100;
     }
 
     form {

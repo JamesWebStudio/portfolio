@@ -22,21 +22,6 @@
             </section>
             <section class="card slide-in-right">
                 <div class="card-title">
-                    <h4>Pocket Office</h4>
-                </div>
-                <div class="card-sub-title">Simple mobile appointments, meetings, lists, notes and diary app</div>
-                <div class="card-body">
-                    <img src="@/assets/pocketoffice.webp" style="max-width: 300px; margin: 0 auto;" alt="No Image">
-                </div>
-                <div class="card-tech">
-                    <p>Vue 2.6 & Firebase</p>
-                </div>
-                <div class="card-link">
-                    <a href="http://pocket-office.surge.sh/" target="_blank">Link</a>
-                </div>
-            </section>
-            <section class="card slide-in-left">
-                <div class="card-title">
                     <h4>Workout Buddy</h4>
                 </div>
                 <div class="card-sub-title">A training app for training and diet advice and recording of stats & progress</div>
@@ -48,6 +33,21 @@
                 </div>
                 <div class="card-link">
                     <a href="https://workoutbuddy.surge.sh/" target="_blank">Link</a>
+                </div>
+            </section>
+            <section class="card slide-in-left">
+                <div class="card-title">
+                    <h4>Pocket Office</h4>
+                </div>
+                <div class="card-sub-title">Simple mobile appointments, meetings, lists, notes and diary app</div>
+                <div class="card-body">
+                    <img src="@/assets/pocketoffice.webp" style="max-width: 300px; margin: 0 auto;" alt="No Image">
+                </div>
+                <div class="card-tech">
+                    <p>Vue 2.6 & Firebase</p>
+                </div>
+                <div class="card-link">
+                    <a href="http://pocket-office.surge.sh/" target="_blank">Link</a>
                 </div>
             </section>
             <section class="card slide-in-right">
@@ -67,20 +67,20 @@
             </section>
             <section class="card slide-in-left">
                 <div class="card-title">
-                    <h4>TDB</h4>
+                    <h4>NuxtWeather</h4>
                 </div>
-                <div class="card-sub-title">TBW</div>
+                <div class="card-sub-title">A weather app</div>
                 <div class="card-body">
-                    <img src="" alt="No Image" loading="lazy">
+                    <img src="@/assets/nuxtweather.webp" alt="No Image" loading="lazy">
                 </div>
                 <div class="card-tech">
-                    <p></p>
+                    <p>Nuxt 3, Tailwind, Openweather API</p>
                 </div>
                 <div class="card-link">
-                    <a href="" target="_blank">Link</a>
+                    <a href="http://www.nuxtweather.surge.sh" target="_blank">Link</a>
                 </div>
             </section>
-            <section class="card slide-in-right">
+            <!-- <section class="card slide-in-right">
                 <div class="card-title">
                     <h4>TBD</h4>
                 </div>
@@ -94,7 +94,7 @@
                 <div class="card-link">
                     <a href="" target="_blank">Link</a>
                 </div>
-            </section>
+            </section> -->
         </section>
     </section>
 </template>
