@@ -7,7 +7,6 @@
             <Meta name="description" content="JamesWebStudio - Functionality and Simplicity by Design" />
             <Meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Html>
-        <!-- <img src="images/background-texture2.jpg" alt="" /> -->
         <Nav />
         <slot />
         <Footer />
@@ -19,7 +18,7 @@
     display:flex; 
     flex-direction: column;
     background-color: rgb(18, 18, 19);
-    background: url('images/background-texture2.jpg');
+    background: url('/images/background-texture2.jpg');
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: left top;
