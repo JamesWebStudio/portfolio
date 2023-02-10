@@ -1,7 +1,5 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-    target: 'static',
-    buildModules: [ '@nuxt/image-edge'  ],
     app: {
         head: {
           meta: [
@@ -24,11 +22,7 @@ export default defineNuxtConfig({
                 href: 'style.css',
                 type: 'text/css'
             },
-            // {
-            //     rel: 'stylesheet',
-            //     href: 'animations.css',
-            //     type: 'text/css'
-            // },
+            
             {
                 rel: "icon",
                 type: "image/x-icon", 
@@ -44,7 +38,9 @@ export default defineNuxtConfig({
             // <noscript>Javascript is required</noscript>
             { children: 'Javascript is required' }
           ]
-        }
+        },
+        pageTransition: { name: 'page', mode: 'out-in' },
+
     },
     modules: [    
       '@nuxt/image-edge',  
