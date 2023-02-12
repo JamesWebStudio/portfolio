@@ -1,5 +1,5 @@
 <template>
-    <div id="mainLayout" style="background: url('/images/background-texture2.jpg')">
+    <div id="mainLayout" style="background: url('/images/background-texture-com.webp')">
         <Html lang="en-GB">
             <Head>
                 <Title>JamesWebStudio</Title>
