@@ -5,6 +5,7 @@
                 <Title>JamesWebStudio</Title>
             </Head>
             <Meta name="description" content="JamesWebStudio - Functionality and Simplicity by Design" />
+            <Meta name="description" content="Web Developer from Birmingham" />
             <Meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Html>
         <Nav />
