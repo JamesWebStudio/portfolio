@@ -1,5 +1,5 @@
 <template>
-    <div id="mainLayout">
+    <div id="mainLayout" style="background: url('/images/background-texture2.jpg')">
         <Html lang="en-GB">
             <Head>
                 <Title>JamesWebStudio</Title>
@@ -18,7 +18,7 @@
     display:flex; 
     flex-direction: column;
     background-color: rgb(18, 18, 19);
-    background: url('/images/background-texture2.jpg');
+    /* background: url('/images/background-texture2.jpg'); */
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: left top;
