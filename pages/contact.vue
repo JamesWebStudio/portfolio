@@ -18,13 +18,6 @@
         <p>* required</p>
         <button class="btn custom-btn" type="submit" @submit="submit">Send Message</button>
     </form>
-    <!-- <div v-if="messageSent">
-        <div class="alert">Message Sent, we will reply  as soon as possible</div>
-        <div id="links">
-            <nuxt-link to="/">Home</nuxt-link>
-            <nuxt-link to="-1">Back</nuxt-link>
-        </div>
-    </div> -->
 </section>
 </template>
 
@@ -49,7 +42,6 @@
         width: 100%;
         color: white;
         padding:0 10px;
-        height: 100vh;
         z-index: 100;
     }
 
@@ -73,6 +65,13 @@
 
     imput:invalid {
         border: 3px solid red;
+    }
+
+    .custom-btn {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
     }
 
 </style>

@@ -13,7 +13,7 @@
     justify-content: space-evenly;
     width: 100vw;
     background-color: black;
-    height:120px;
+    height:180px;
     padding-top:30px;
     margin:0;
     color: white;
