@@ -70,7 +70,7 @@
     .custom-btn {
         font-size: 1.2rem;
         margin-bottom: 30px;
-        display: flex;
+        display: block;
         justify-content: center;
     }
 
